@@ -1,0 +1,15 @@
+<div>
+    <p>1. Make sure your Magento store is in Developer Mode or some of your settings may not apply.</p>
+    <p>2. After changing settings make sure to clear related caches: <b>Flush Static Files Cache</b>, Flush Magento Cache, Clear Browser Cache (if necessary also Flush JS/CSS Cache, Flush Catalog Images Files, Flush Cache Storage)</p>
+    <p>3. Make sure to clear Pearl Theme related cache from System > Cache Management > WeltPixel Cache Management > <b>Regenerate Pearl Theme Less</b>. <b>(Only available with Pearl Theme)</b></p>
+    <p>4. Make sure you are changing the settings on the right store view.</p>
+    <hr/>
+    <p>From command line you could use the following:</p>
+    <div class="command-line-msg">
+        <p><b>php bin/magento deploy:mode:set developer</b> - to set developer mode</p>
+        <p><b>php bin/magento cache:clean</b> - to clear the cache</p>
+        <p><b>php bin/magento cache:flush</b> - to flush the cache</p>
+        <p><b>php bin/magento weltpixel:less:generate</b> - regenerate Pearl Theme Less files <b>(Only available with Pearl Theme)</b></p>
+        <p><b>php bin/magento weltpixel:cleanup</b> - filesystem cleanup (clears all the pregenerated files) <b>(Only available with Pearl Theme)</b></p>
+    </div>
+</div>
